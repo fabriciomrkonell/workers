@@ -1,0 +1,13 @@
+<button onclick="HELLO()">HELLO</button>
+
+<script>
+  function HELLO() {
+    worker.postMessage('Hello World');
+  }
+
+  var worker = new Worker('work.js');
+
+	worker.addEventListener('message', function(e) {
+		console.log('Feito: ', e.data);
+	}, false);
+</script>
