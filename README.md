@@ -1,2 +1,1 @@
-# workers
 Hello world, Workers!
